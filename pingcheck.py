@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 import json
 import sys
 from socket import gethostbyname, getfqdn, gaierror  # Supports only IPv4 :P
