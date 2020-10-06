@@ -60,7 +60,8 @@ try:
                 sleep(config["loop_time"] - config["timeout"])
 
         else:  # we keep exact loop time by substact highest ping time
-            sleep(config["loop_time"] - slowest_time)
+            if slowest_time < config["loop_time"]:
+                sleep(config["loop_time"] - slowest_time)
 
 except KeyboardInterrupt:
     sys.exit()
