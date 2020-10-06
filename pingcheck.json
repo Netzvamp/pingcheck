@@ -1,9 +1,0 @@
-{
-  "hosts": [
-    "8.8.8.8"
-  ],
-  "logfile": "pingcheck.log",
-  "timeout": 1,
-  "loop_time": 2,
-  "slow_ping": 0.5
-}
